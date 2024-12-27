@@ -5,9 +5,23 @@
     <link rel="icon" type="image/svg+xml" href="/calendar.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>옛날달력</title>
+
+    <!-- og tag -->
+    <meta content="website" property="og:type" />
+    <meta content="옛날달력" property="og:title" />
+    <meta content="Calendar" property="og:description" />
+    <meta content="%PUBLIC_URL%" property="og:url" />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PELNLKWWVE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PELNLKWWVE');
+    </script>
   </body>
 </html>
