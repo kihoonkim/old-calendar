@@ -1,0 +1,65 @@
+.root-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  width: calc(100% - 2rem);
+  max-width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.month-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.small-calendar {
+  align-self: flex-end;
+  width: 25%;
+  cursor: pointer;
+}
+.main-calendar {
+
+}
+.navigator-prev {
+  align-self: flex-end;
+  flex-grow: 1;
+  cursor: pointer;
+  font-size: 0.75rem;
+  height: 1rem;
+}
+.navigator-next {
+  align-self: flex-end;
+  text-align: right;
+  flex-grow: 1;
+  cursor: pointer;
+  font-size: 0.75rem;
+  height: 1rem;
+}
+
+@media screen and (min-width: 820px) {
+  .navigator-prev, .navigator-next {
+    display: none;
+  }
+}
+@media screen and (max-width: 819px) {
+  .month-container {
+    justify-content: center;
+  }
+  .small-calendar {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0;
+  }
+}

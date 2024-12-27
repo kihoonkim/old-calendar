@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--main-day-font-size);
+  font-family: "Dela Gothic One", serif;;
+  border-right: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+}
+
+.container-small {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--small-day-font-size);
+}
+
+.sunday {
+  color: #d7664cff;
+}
+
+.saturday {
+  color: #1a7ed0;
+}
+
+.weekday {
+  color: black;
+}
+
+.day-english {
+  font-size: var(--main-day-sub-font-size);
+  line-height: 1.5;
+}

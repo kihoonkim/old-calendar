@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.month {
+  font-size: var(--this-month-font-size);
+  font-weight: bold;
+  color: #d7664cff;
+}
+.year {
+  font-size: var(--this-year-font-size);
+  font-weight: bold;
+}

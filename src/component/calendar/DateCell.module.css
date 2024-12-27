@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  font-weight: bold;
+  font-size: var(--main-date-font-size);
+  text-align: center;
+}
+
+.container-small {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--small-day-font-size);
+}
+
+.date-other-month {
+  font-size: var(--main-other-font-size);
+  color: #ffffff;
+  -webkit-text-stroke: 1px black;
+  flex-grow: 1;
+}
+
+.date-holiday {
+  color: #d7664cff;
+  flex-grow: 1;
+}
+
+.date-saturday {
+  color: #1a7ed0;
+  flex-grow: 1;
+}
+
+.date-weekday {
+  color: black;
+  flex-grow: 1;
+}
+
+.note {
+  border-top: 1px solid #999999;
+  height: 2.5rem;
+  flex-shrink: 0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .note {
+    height: 1.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .note {
+    height: 1.2rem;
+    font-size: 0.5rem;
+  }
+}

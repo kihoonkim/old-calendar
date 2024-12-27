@@ -1,0 +1,39 @@
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem 1rem;
+  width: calc(100% - 2rem);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.public-link {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.private-link {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  a {
+    font-size: 0.75rem;
+  }
+}

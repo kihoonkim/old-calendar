@@ -1,0 +1,46 @@
+:root {
+  --date-count: 30
+}
+.container {
+  width: 100%;
+  height: 8rem;
+  display: grid;
+  grid-template-columns: repeat(var(--date-count), 1fr);
+  border-left: 1px solid #999999;
+  border-top: 1px solid #999999;
+  margin-top: 1rem;
+}
+@media (max-width: 800px) {
+  .container {
+    display: none;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Dela Gothic One", serif;;
+  font-size: var(--memo-title-font-size);
+  border-right: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+}
+
+.date {
+  text-align: center;
+  font-size: 1.2rem;
+  border-right: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+}
+
+.date > div:first-child {
+  padding: 0;
+  border-bottom: 1px solid #999999;
+}
+
+.date input {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
